@@ -81,9 +81,9 @@
 				<li class="main-menu__item"><a href="/" class="main-menu__link">Авторизация</a></li>
 			</ul>
 		</nav>
-		<header class="header fullheight table-box">
+		<header class="header table-box fullheight fullheight_mih">
 			<div class="table-box__top">
-				<div class="container container_padded">
+				<div class="container header__top-row">
 					<ul class="social-links">
 						<li class="social-links__item"><a href="http://vk.com/homafromptz" class="social-links__link fa fa-vk"></a></li>
 						<li class="social-links__item"><a href="https://github.com/HomAfromPTZ" class="social-links__link fa fa-github-alt"></a></li>
@@ -96,73 +96,92 @@
 			</div>
 			<div class="table-box__middle">
 				<div class="vertical-aligned">
-					<div class="avatar"><img src="/assets/img/me.jpg" title="Frontend. Wordpress. Разработка сайтов под ключ." alt="Лембинен Николай"/></div>
-					<p class="author-name">Лембинен Николай</p>
-					<p class="author-desctiption">Еще одна страничка</p>
+					<div class="site-author">
+						<div class="avatar"><img src="/assets/img/me.jpg" title="Frontend. Wordpress. Разработка сайтов под ключ." alt="Лембинен Николай"/></div>
+						<p class="site-author__name">Лембинен Николай</p>
+						<p class="site-author__desctiption">Еще одна страничка</p>
+					</div>
+					<svg class="header__svg-bg">
+						<use xlink:href="#icon-portfolio_header"></use>
+					</svg>
 					<button class="go-down fa fa-chevron-down"></button>
-					<svg preserveAspectRatio="none" viewBox="0 0 2000 354.69" class="header__svg-corner">
-						<use xlink:href="#icon-bg" class="icon-use"></use>
+					<svg preserveAspectRatio="none" viewBox="0 0 2032 360.368" class="header__svg-corner">
+						<use xlink:href="#icon-bg"></use>
 					</svg>
 				</div>
 			</div>
-			<div class="table-box__bottom header__title">
-				<h1 class="header__title-text sidestripes">Мои работы</h1>
+			<div class="table-box__bottom">
+				<div class="header__title">
+					<div class="svg-heading">
+						<h1 class="svg-heading__text sidestripes">Мои работы</h1>
+						<svg class="svg-heading__img">
+							<use xlink:href="#icon-works_header"></use>
+						</svg>
+					</div>
+				</div>
 			</div>
 		</header>
-		<div class="content clearfix">
-			<section class="works fullheight">
-				<div class="container container_fullwidth">
-					<div class="column column_half">
-						<div class="vertical-aligned">
-							<h3 class="sidestripes works__title">Сайт транспортно-логистической компании bringcar.ru</h3>
-							<p class="works__tech">html, bootstrap, sass, jquery</p><a href="#" class="works__link">Посмотреть сайт</a>
-						</div>
+		<section class="portfolio-slider fullheight fullheight_mih">
+			<div class="portfolio-slider__module portfolio-slider__projects-container">
+				<div class="portfolio-projects">
+					<div class="project">
+						<h3 class="sidestripes project__title">Сайт транспортной компании bringcar.ru</h3>
+						<p class="project__tech">html, bootstrap, sass, jquery</p><a href="#" class="project__link">Посмотреть сайт</a>
 					</div>
-					<div class="column column_half">
-						<div class="slider">
-							<div class="slider__current">
-								<div class="vertical-aligned"><img src="/assets/img/works/bringcar.png" alt="Bringcar"></div>
-							</div>
-							<div class="slider__nav">
-								<div class="slider__previous"><img src="/assets/img/works/alpha.png" alt="Alpha Capital Education">
-									<button class="fa fa-chevton-down slide-previous"></button>
-								</div>
-								<div class="slider__next"><img src="/assets/img/works/karakalpakiya.png" alt="Karakalpakiya">
-									<button class="fa fa-chevton-up slide-next"></button>
-								</div>
-							</div>
+				</div>
+			</div>
+			<div class="portfolio-slider__module portfolio-slider__preview-container">
+				<div class="portfolio-previews">
+					<div class="portfolio-previews__preview"><img src="/assets/img/works/bringcar.png" alt="Bringcar"></div>
+					<div class="portfolio-previews__preview"><img src="/assets/img/works/unspoken.png" alt="Bringcar"></div>
+				</div>
+			</div>
+			<div class="portfolio-slider__module portfolio-slider__navigation-container">
+				<div class="navigation-box navigation-box_prev">
+					<button class="portfolio-button portfolio-button_prev">
+						<div class="fa fa-chevron-down"></div>
+					</button>
+					<div class="portfolio-thumbnails">
+						<div class="portfolio-thumbnails__thumbnail"><img src="/assets/img/works/alpha.png" alt="Alpha Capital Education"></div>
+					</div>
+				</div>
+				<div class="navigation-box navigation-box_next">
+					<button class="portfolio-button portfolio-button_next">
+						<div class="fa fa-chevron-up"></div>
+					</button>
+					<div class="portfolio-thumbnails">
+						<div class="portfolio-thumbnails__thumbnail"><img src="/assets/img/works/karakalpakiya.png" alt="Karakalpakiya"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="talks">
+			<h2 class="sidestripes">Что обо мне говорят</h2>
+			<div class="container container_slim clearfix">
+				<div class="column column_half">
+					<div class="testimonial">
+						<p class="testimonial__text">Этот парень был одним из тех, кто просто хочет спать</p>
+						<div class="testimonial__author">
+							<div class="avatar"><img src="/assets/img/dima.png" title="Сооснователь школы LoftSchool" alt="Ковальчук Дмитрий"/></div>
+							<p class="name">Ковальчук Дмитрий</p>
+							<p class="description">сооснователь LoftSchool</p>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="talks">
-				<h2 class="sidestripes">Что обо мне говорят</h2>
-				<div class="container container_slim clearfix">
-					<div class="column column_half">
-						<div class="testimonial">
-							<p class="testimonial__text">Этот парень был одним из тех, кто просто хочет спать</p>
-							<div class="testimonial__author">
-								<div class="avatar"><img src="/assets/img/dima.png" title="Сооснователь школы LoftSchool" alt="Ковальчук Дмитрий"/></div>
-								<p class="name">Ковальчук Дмитрий</p>
-								<p class="description">сооснователь LoftSchool</p>
-							</div>
-						</div>
-					</div>
-					<div class="column column_half">
-						<div class="testimonial">
-							<p class="testimonial__text">Этот парень был одним из тех, кто просто хочет спать</p>
-							<div class="testimonial__author">
-								<div class="avatar"><img src="/assets/img/zar.png" title="Сооснователь школы LoftSchool" alt="Зар Захаров"/></div>
-								<p class="name">Зар Захаров</p>
-								<p class="description">сооснователь LoftSchool</p>
-							</div>
+				<div class="column column_half">
+					<div class="testimonial">
+						<p class="testimonial__text">Этот парень был одним из тех, кто просто хочет спать</p>
+						<div class="testimonial__author">
+							<div class="avatar"><img src="/assets/img/zar.png" title="Сооснователь школы LoftSchool" alt="Зар Захаров"/></div>
+							<p class="name">Зар Захаров</p>
+							<p class="description">сооснователь LoftSchool</p>
 						</div>
 					</div>
 				</div>
-				<div class="contact-form"></div>
-				<button class="go-up fa fa-chevron-up"></button>
-			</section>
-		</div>
+			</div>
+			<div class="contact-form"></div>
+			<button class="go-up fa fa-chevron-up"></button>
+		</section>
 		<footer class="footer">
 			<p>Общий футер</p>
 		</footer>
