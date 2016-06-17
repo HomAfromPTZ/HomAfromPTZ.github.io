@@ -83,7 +83,7 @@
 		</nav>
 		<header class="header table-box fullheight fullheight_mih">
 			<div class="table-box__top">
-				<div class="container header__top-row">
+				<div class="header__top-row">
 					<ul class="social-links">
 						<li class="social-links__item"><a href="http://vk.com/homafromptz" class="social-links__link fa fa-vk"></a></li>
 						<li class="social-links__item"><a href="https://github.com/HomAfromPTZ" class="social-links__link fa fa-github-alt"></a></li>
@@ -155,34 +155,55 @@
 				</div>
 			</div>
 		</section>
-		<section class="talks">
-			<h2 class="sidestripes">Что обо мне говорят</h2>
-			<div class="container container_slim clearfix">
-				<div class="column column_half">
-					<div class="testimonial">
-						<p class="testimonial__text">Этот парень был одним из тех, кто просто хочет спать</p>
-						<div class="testimonial__author">
-							<div class="avatar"><img src="/assets/img/dima.png" title="Сооснователь школы LoftSchool" alt="Ковальчук Дмитрий"/></div>
-							<p class="name">Ковальчук Дмитрий</p>
-							<p class="description">сооснователь LoftSchool</p>
+		<section class="talks clearfix">
+			<div class="svg-heading">
+				<h1 class="svg-heading__text sidestripes">Что обо мне говорят</h1>
+				<svg class="svg-heading__img">
+					<use xlink:href="#icon-about_header"></use>
+				</svg>
+			</div>
+			<div class="talks__wrapper clearfix">
+				<div class="testimonial">
+					<blockquote class="testimonial__text">Этот парень был одним из тех, кто просто хочет спать</blockquote>
+					<div class="testimonial__author author">
+						<div class="avatar"><img src="/assets/img/dima.png" title="Сооснователь школы LoftSchool" alt="Ковальчук Дмитрий"/></div>
+						<div class="author">
+							<p class="author__name">Ковальчук Дмитрий</p>
+							<p class="author__description">сооснователь LoftSchool</p>
 						</div>
 					</div>
 				</div>
-				<div class="column column_half">
-					<div class="testimonial">
-						<p class="testimonial__text">Этот парень был одним из тех, кто просто хочет спать</p>
-						<div class="testimonial__author">
-							<div class="avatar"><img src="/assets/img/zar.png" title="Сооснователь школы LoftSchool" alt="Зар Захаров"/></div>
-							<p class="name">Зар Захаров</p>
-							<p class="description">сооснователь LoftSchool</p>
+				<div class="testimonial">
+					<blockquote class="testimonial__text">Этот парень был одним из тех, кто просто хочет спать</blockquote>
+					<div class="testimonial__author">
+						<div class="avatar"><img src="/assets/img/zar.png" title="Сооснователь школы LoftSchool" alt="Зар Захаров"/></div>
+						<div class="author">
+							<p class="author__name">Зар Захаров</p>
+							<p class="author__description">сооснователь LoftSchool</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="contact-form"></div>
+			<form type="POST" action="/" class="contact-form">
+				<div class="contact-form__bg"></div>
+				<div class="contact-form__content">
+					<h3 class="contact-form__heading sidestripes">Связаться со мной</h3>
+					<input type="text" name="name" placeholder="Имя" class="contact-form__field">
+					<input type="text" name="email" placeholder="Email" class="contact-form__field">
+					<textarea name="message" placeholder="Ваше сообщение" class="contact-form__field contact-form__field_textarea"></textarea>
+				</div>
+				<ul class="page-links">
+					<li class="page-links__item">
+						<button id="form-submit" class="page-links__link">Отправить</button>
+					</li>
+					<li class="page-links__item">
+						<button id="form-clear" class="page-links__link">Очистить</button>
+					</li>
+				</ul>
+			</form>
 			<button class="go-up fa fa-chevron-up"></button>
 		</section>
-		<footer class="footer">
+		<footer class="footer footer_common">
 			<p>Общий футер</p>
 		</footer>
 	</body>
