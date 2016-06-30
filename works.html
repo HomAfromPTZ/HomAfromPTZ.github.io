@@ -221,23 +221,25 @@
 					</div>
 				</div>
 			</div>
-			<form class="contact-form">
-				<div class="contact-form__bg"></div>
-				<div class="contact-form__content">
-					<h3 class="contact-form__heading sidestripes">Связаться со мной</h3>
-					<input type="text" name="name" placeholder="Имя" class="contact-form__field">
-					<input type="text" name="email" placeholder="Email" class="contact-form__field">
-					<textarea name="message" placeholder="Ваше сообщение" class="contact-form__field contact-form__field_textarea"></textarea>
-				</div>
-				<ul class="page-links">
-					<li class="page-links__item">
-						<button id="form-submit" class="page-links__link">Отправить</button>
-					</li>
-					<li class="page-links__item">
-						<button id="form-clear" class="page-links__link">Очистить</button>
-					</li>
-				</ul>
-			</form>
+			<div class="contact-form">
+				<form id="contact">
+					<div class="contact-form__bg"></div>
+					<div class="contact-form__content">
+						<h3 class="contact-form__heading sidestripes">Связаться со мной</h3>
+						<input type="text" name="name" placeholder="Имя" class="contact-form__field">
+						<input type="text" name="email" placeholder="Email" class="contact-form__field">
+						<textarea name="message" placeholder="Ваше сообщение" class="contact-form__field contact-form__field_textarea"></textarea>
+					</div>
+					<ul class="form-buttons">
+						<li class="form-buttons__button form-buttons__button_even">
+							<button id="form-submit" class="form-buttons__button-content">Отправить</button>
+						</li>
+						<li class="form-buttons__button form-buttons__button_even">
+							<button id="form-clear" class="form-buttons__button-content">Очистить</button>
+						</li>
+					</ul>
+				</form>
+			</div>
 		</section>
 		<footer class="footer footer_common">
 			<button class="go-up fa fa-chevron-up"></button>

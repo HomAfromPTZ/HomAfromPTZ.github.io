@@ -98,40 +98,42 @@
 								<li class="social-links__item social-links__item_welcome"><a href="http://stackoverflow.com/cv/homawebdev" target="_blank" class="social-links__link fa fa-stack-overflow"></a></li>
 							</ul>
 						</div>
-						<ul class="page-links">
-							<li class="page-links__item"><a href="works.html" class="preload-link page-links__link">Мои работы</a></li>
-							<li class="page-links__item"><a href="about.html" class="preload-link page-links__link">Обо мне</a></li>
-							<li class="page-links__item"><a href="blog.html" class="preload-link page-links__link">Блог</a></li>
+						<ul class="form-buttons">
+							<li class="form-buttons__button"><a href="works.html" class="preload-link form-buttons__button-content">Мои работы</a></li>
+							<li class="form-buttons__button"><a href="about.html" class="preload-link form-buttons__button-content">Обо мне</a></li>
+							<li class="form-buttons__button"><a href="blog.html" class="preload-link form-buttons__button-content">Блог</a></li>
 						</ul>
 					</div>
 					<div class="flip-card__back-side">
-						<form type="POST" action="/" class="login-form">
-							<h3 class="sidestripes">Авторизуйтесь</h3>
-							<label class="login-form__label login-form__label_text">
-								<input placeholder="Логин" type="text" class="input input_text"/><span class="fa fa-user"></span>
-							</label>
-							<label class="login-form__label login-form__label_text">
-								<input placeholder="Пароль" type="password" class="input input_text"/><span class="fa fa-key"></span>
-							</label>
-							<label class="login-form__label login-form__label_checkbox">
-								<input type="checkbox" name="robot_check" value="not a robot" class="input input_checkbox"/><span>Я человек</span>
-							</label>
-							<p class="login-form__plain-text">Вы точно не робот?</p>
-							<label class="login-form__label login-form__label_radio">
-								<input type="radio" name="robot_radio" value="shure" class="input input_radio"/><span>Да</span>
-							</label>
-							<label class="login-form__label login-form__label_radio">
-								<input type="radio" name="robot_radio" value="who knows" class="input input_radio"/><span>Не уверен</span>
-							</label>
+						<form id="login">
+							<div class="login-form">
+								<h3 class="sidestripes">Авторизуйтесь</h3>
+								<label class="login-form__label login-form__label_text">
+									<input placeholder="Логин" type="text" class="input input_text"/><span class="fa fa-user"></span>
+								</label>
+								<label class="login-form__label login-form__label_text">
+									<input placeholder="Пароль" type="password" class="input input_text"/><span class="fa fa-key"></span>
+								</label>
+								<label class="login-form__label login-form__label_checkbox">
+									<input type="checkbox" name="robot_check" value="not a robot" class="input input_checkbox"/><span>Я человек</span>
+								</label>
+								<p class="login-form__plain-text">Вы точно не робот?</p>
+								<label class="login-form__label login-form__label_radio">
+									<input type="radio" name="robot_radio" value="shure" class="input input_radio"/><span>Да</span>
+								</label>
+								<label class="login-form__label login-form__label_radio">
+									<input type="radio" name="robot_radio" value="who knows" class="input input_radio"/><span>Не уверен</span>
+								</label>
+							</div>
+							<ul class="form-buttons">
+								<li class="form-buttons__button form-buttons__button_even">
+									<button id="unflip-card" class="form-buttons__button-content">На главную</button>
+								</li>
+								<li class="form-buttons__button form-buttons__button_even">
+									<button id="log-me" class="form-buttons__button-content">Войти</button>
+								</li>
+							</ul>
 						</form>
-						<ul class="page-links">
-							<li class="page-links__item">
-								<button id="unflip-card" class="page-links__link">На главную</button>
-							</li>
-							<li class="page-links__item">
-								<button id="log-me" class="page-links__link">Войти</button>
-							</li>
-						</ul>
 					</div>
 				</div>
 			</div>
