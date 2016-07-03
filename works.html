@@ -222,13 +222,13 @@
 				</div>
 			</div>
 			<div class="contact-form">
-				<form id="contact">
+				<form id="contact" novalidate>
 					<div class="contact-form__bg"></div>
 					<div class="contact-form__content">
 						<h3 class="contact-form__heading sidestripes">Связаться со мной</h3>
-						<input type="text" name="name" placeholder="Имя" class="contact-form__field">
-						<input type="text" name="email" placeholder="Email" class="contact-form__field">
-						<textarea name="message" placeholder="Ваше сообщение" class="contact-form__field contact-form__field_textarea"></textarea>
+						<input type="text" name="name" placeholder="Имя" required data-check="username" class="contact-form__field">
+						<input type="email" name="email" placeholder="Email" required data-check="email" class="contact-form__field">
+						<textarea name="message" placeholder="Ваше сообщение" required data-check="text" class="contact-form__field contact-form__field_textarea"></textarea>
 					</div>
 					<ul class="form-buttons">
 						<li class="form-buttons__button form-buttons__button_even">
