@@ -32,12 +32,23 @@
 		<link rel="stylesheet" href="/assets/css/admin.css">
 	</head>
 	<body>
+		<div id="preloader">
+			<div id="preloader__progress">
+				<div id="preloader-svg__percentage">0</div>
+				<div id="looped-bar"></div>
+				<svg version="1.1" id="preloader-svg__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="144px" height="144px" viewBox="0 0 144 144" enable-background="new 0 0 144 144" xml:space="preserve">
+					<circle opacity="0.4" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-dasharray="439.822971503" stroke-dashoffset="439.822971503" stroke-miterlimit="10" cx="72" cy="72" r="70" transform="rotate(-160 72 72)" class="bar bar__outer"></circle>
+					<circle opacity="0.7" fill="none" stroke="#FFFFFF" stroke-width="3.8938" stroke-dasharray="345.575191895" stroke-dashoffset="345.575191895" stroke-miterlimit="10" cx="72" cy="72" r="55" transform="rotate(-120 72 72)" class="bar bar__center"></circle>
+					<circle fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" stroke-dasharray="251.327412287" stroke-dashoffset="251.327412287" cx="72" cy="72" r="40" transform="rotate(-90 72 72)" class="bar bar__inner"></circle>
+				</svg>
+			</div>
+		</div>
 		<div class="admin-page">
 			<div class="header">
 				<div class="header__title-wrapper">
 					<h1 class="header__title">Панель администрирования</h1>
 				</div>
-				<div class="header__link-wrapper"><a href="/" title="Вернуться на сайт" class="header__link">Вернуться на сайт</a></div>
+				<div class="header__link-wrapper"><a href="/" title="Вернуться на сайт" class="header__link preload-link">Вернуться на сайт</a></div>
 			</div>
 			<ul class="tabs-control">
 				<li class="tabs-control__item active">Работы</li>
@@ -56,7 +67,7 @@
 							<label class="file-label">Загрузить картинку
 								<input type="file" class="form__field form__field_file">
 							</label>
-							<button class="form__button">Добавить</button>
+							<button disabled class="form__button">Добавить</button>
 						</div>
 					</form>
 				</li>
@@ -66,129 +77,98 @@
 							<h2 class="form__heading">Обо мне</h2>
 							<div class="skills">
 								<div class="skills__block">
-									<h3 class="form__subtitle">Frontend</h3>
+									<div class="skills__remove fa fa-close"></div>
+									<input type="text" value="Frontend" placeholder="Категория" class="skills__heading"/>
 									<ul class="skills__list">
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Html" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="Html 5 &amp; CSS 3" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="99" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Sass" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="Js &amp; Jquery" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="70" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Js" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="60" class="skill__input"/>%
-											</label>
+											<input type="text" value="Less &amp; Sass" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="70" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Less" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="55" class="skill__input"/>%
-											</label>
+											<input type="text" value="Jade" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="55" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
+										<li class="fa fa-plus skill skill__new"></li>
 									</ul>
 								</div>
 								<div class="skills__block">
-									<h3 class="form__subtitle">Backend</h3>
+									<div class="skills__remove fa fa-close"></div>
+									<input type="text" value="Backend" placeholder="Категория" class="skills__heading"/>
 									<ul class="skills__list">
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Html" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="Php" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="60" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Sass" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="MySql" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="70" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Js" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="Node.js &amp; npm" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="10" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Less" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="Mongo.db" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="0" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
-										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Less" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
-										</li>
+										<li class="skill skill__new fa fa-plus"></li>
 									</ul>
 								</div>
 								<div class="skills__block">
-									<h3 class="form__subtitle">Workflow</h3>
+									<div class="skills__remove fa fa-close"></div>
+									<input type="text" value="Workflow" placeholder="Категория" class="skills__heading"/>
 									<ul class="skills__list">
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Gulp and browserify" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="Git" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="70" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Very long and lonesome sentence" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="Gulp" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="80" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Js" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="Bower" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="90" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Less" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="Ssh" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="20" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
+										<li class="skill skill__new fa fa-plus"></li>
 									</ul>
 								</div>
 								<div class="skills__block">
-									<h3 class="form__subtitle">CMS</h3>
+									<div class="skills__remove fa fa-close"></div>
+									<input type="text" value="CMS" placeholder="Категория" class="skills__heading"/>
 									<ul class="skills__list">
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Gulp and browserify" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="Wordpress" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="90" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Very long and lonesome sentence" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="Joomla" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="30" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
 										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Js" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
+											<input type="text" value="Борода и усы" placeholder="Технология" class="skill__name"/>
+											<input type="number" min="0" max="100" step="0.5" value="5" class="skill__percentage"/><span class="skill__misc"><span class="skill__percent-sign">%</span><span class="skill__remove fa fa-close"></span></span>
 										</li>
-										<li class="skill">
-											<label class="skill__label">
-												<input type="text" value="Less" placeholder="Технология" class="skill__name"/>
-												<input type="number" min="0" max="100" step="0.5" value="100" class="skill__input"/>%
-											</label>
-										</li>
+										<li class="skill skill__new fa fa-plus"></li>
 									</ul>
+								</div>
+								<div class="skills__block skills__block_new">
+									<div class="fa fa-plus"></div>
 								</div>
 							</div>
-							<button class="form__button">Сохранить</button>
+							<button disabled class="form__button">Сохранить</button>
 						</div>
 					</form>
 				</li>
@@ -199,13 +179,14 @@
 							<h3 class="form__subtitle">Добавить запись</h3>
 							<input type="text" placeholder="Название" name="article-title" class="form__field">
 							<input type="text" placeholder="Дата" name="article-date" class="form__field form__field_date">
-							<textarea placeholder="Содержание" name="article-text" class="form__field form__field_textarea"></textarea>
-							<button class="form__button">Добавить</button>
+							<textarea placeholder="Содержание" name="article-text" class="form__field form__field_textarea tinymce-field"></textarea>
+							<button disabled class="form__button">Добавить</button>
 						</div>
 					</form>
 				</li>
 			</ul>
 		</div>
+		<script src="//cdn.tinymce.com/4/tinymce.min.js" defer></script>
 		<script src="/assets/js/libs.js" defer></script>
 		<script src="/assets/js/app.js" defer></script>
 	</body>
