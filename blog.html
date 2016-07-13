@@ -90,8 +90,8 @@
 				<li class="main-menu__item"><a href="/" class="preload-link main-menu__link">Авторизация</a></li>
 			</ul>
 		</nav>
-		<header class="header table-box fullheight fullheight_mih">
-			<div class="table-box__top">
+		<header class="header table-box">
+			<div class="table-box__row">
 				<div class="header__top-row">
 					<ul class="social-links">
 						<li class="social-links__item"><a href="http://vk.com/homafromptz" target="_blank" class="social-links__link fa fa-vk"></a></li>
@@ -101,8 +101,8 @@
 					<button id="menu-toggle" class="menu-button"><span class="menu-button__line"></span></button>
 				</div>
 			</div>
-			<div class="table-box__middle">
-				<div class="vertical-aligned">
+			<div class="table-box__row table-box__row_fullheight">
+				<div class="table-box__vertical-aligned">
 					<div class="site-author site-author_blog">
 						<div class="avatar"><img src="/assets/img/avatars/avatar_sq.jpg" title="Frontend. Wordpress. Разработка сайтов под ключ." alt="Лембинен Николай"/></div>
 						<div class="svg-heading">
@@ -114,28 +114,25 @@
 						<p class="site-author__description">Статьи</p>
 					</div>
 					<button data-link=".blog" class="go-down fa fa-chevron-down"></button>
-					<svg preserveAspectRatio="none" viewBox="0 0 1000 400" class="header__svg-corner header__svg-corner_left header__svg-corner_blog">
-						<use xlink:href="#icon-about_bg_left"></use>
-					</svg>
-					<svg preserveAspectRatio="none" viewBox="0 0 1000 400" class="header__svg-corner header__svg-corner_right header__svg-corner_blog">
-						<use xlink:href="#icon-about_bg_right"></use>
+					<svg preserveAspectRatio="none" viewBox="0 0 2000 400" class="header__svg-corner header__svg-corner_blog">
+						<use xlink:href="#icon-bg"></use>
 					</svg>
 				</div>
 			</div>
 		</header>
 		<div class="blog last-section">
 			<aside class="blog-navigation">
-				<button class="blog-navigation__toggle"></button>
+				<button class="blog-navigation__toggle"><span class="fa fa-chevron-right"></span></button>
 				<nav class="blog-navigation__wrapper">
 					<ul class="blog-navigation__links-list">
-						<li class="links-list__item"><a href="#google" class="links-list__link">Никаких распродаж! В Госдуме приняли закон о «налоге на Google»</a></li>
-						<li class="links-list__item"><a href="#alph" class="links-list__link">«Актер, которого никто не знал» — умер Альф</a></li>
-						<li class="links-list__item"><a href="#elon" class="links-list__link">«Мы уже киборги», — заявил Илон Маск на конференции Code Conference 2016</a></li>
+						<li class="links-list__item"><a href="#article-0" class="links-list__link">Никаких распродаж! В Госдуме приняли закон о «налоге на Google»</a></li>
+						<li class="links-list__item"><a href="#article-1" class="links-list__link">«Актер, которого никто не знал» — умер Альф</a></li>
+						<li class="links-list__item"><a href="#article-2" class="links-list__link">«Мы уже киборги», — заявил Илон Маск на конференции Code Conference 2016</a></li>
 					</ul>
 				</nav>
 			</aside>
 			<section class="blog-content">
-				<div id="google" class="article">
+				<div id="article-0" class="article">
 					<h3 class="article__title">Никаких распродаж! В Госдуме приняли закон о «налоге на Google»</h3>
 					<p class="article__date">15 июня 2016</p>
 					<div class="article__content">
@@ -152,7 +149,7 @@
 						
 					</div>
 				</div>
-				<div id="alph" class="article">
+				<div id="article-1" class="article">
 					<h3 class="article__title">«Актер, которого никто не знал» — умер Альф</h3>
 					<p class="article__date">14 июня 2016</p>
 					<div class="article__content">
@@ -181,7 +178,7 @@
 						<p>Менеджер Михая Деннис Варгас запустил сбор средств для оплаты больничных услуг и похорон артиста на портале GoFundMe, так что у вас есть возможность отдать дань уважения этому маленькому актеру, которого вы не знали.</p>
 					</div>
 				</div>
-				<div id="elon" class="article">
+				<div id="article-2" class="article">
 					<h3 class="article__title">«Мы уже киборги», — заявил Илон Маск на конференции Code Conference 2016</h3>
 					<p class="article__date">03 июня 2016</p>
 					<div class="article__content">
@@ -206,7 +203,7 @@
 				</div>
 			</section>
 		</div>
-		<footer class="footer footer_common">
+		<footer class="footer">
 			<button class="go-up fa fa-chevron-up"></button>
 			<div class="footer__wrapper">
 				<div class="footer__row">
@@ -265,12 +262,12 @@
 				</div>
 				<div class="footer__row">
 					<div class="footer__column footer__column_left"><span class="footer__quote"><i>“It is so shocking to find out how many people do not believe that they can learn, and how many more believe learning to be difficult.”</i> ― Frank Herbert, Dune</span></div>
-					<div class="footer__column footer__column_right"><span class="copyright">&copy; Лембинен Николай</span><span class="copyright copyright_slogan">To boldly go where no man has gone before</span><span class="copyright copyright_year">2016</span></div>
+					<div class="footer__column footer__column_right"><span class="copyright">&copy; Лембинен Николай</span><span class="copyright copyright_slogan">To boldly go where no man has gone before</span><span class="copyright">2016</span></div>
 				</div>
 			</div>
 		</footer><!--[if lt IE 9]>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
-		<script src="/assets/js/libs.js" defer></script>
-		<script src="/assets/js/app.js" defer></script>
+		<script src="/assets/js/libs.js"></script>
+		<script src="/assets/js/app.js"></script>
 	</body>
 </html>
